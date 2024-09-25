@@ -28,7 +28,7 @@ const SignupModal = ({ show, handleClose }) => {
     setError('');
     console.log('Signup submitted:', formData);
     setFormData({ username: '', email: '', password: '' });
-    handleClose(); // Close the modal on successful submission
+    handleClose(); 
   };
 
   return (

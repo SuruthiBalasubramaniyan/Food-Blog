@@ -3,11 +3,12 @@ import { useCart } from '../Food/Context';
 import { Modal, Button } from 'react-bootstrap';
 import { BsBasketFill } from 'react-icons/bs';
 import { RxCrossCircled } from "react-icons/rx";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 
 const Check = () => {
   const { cart, removeFromCart, clearCart } = useCart();
   const [showModal, setShowModal] = useState(false);
-  const [orderPlaced, setOrderPlaced] = useState(false);
   const [name, setName] = useState('');
   const [address, setAddress] = useState('');
   const [phone, setPhone] = useState('');
@@ -17,17 +18,14 @@ const Check = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (name && address && phone) {
-      setOrderPlaced(true);
+      toast.success("Order placed successfully!");  
       clearCart();
-      setTimeout(() => {
-        setOrderPlaced(true);
-        setShowModal(true);
-        setName('');
-        setAddress('');
-        setPhone('');
-      }, 3000);
+      setShowModal(false);  
+      setName('');
+      setAddress('');
+      setPhone('');
     } else {
-      alert('Order Placed Sucessfully!');
+      toast.error('Please fill all fields!');  
     }
   };
 
@@ -55,9 +53,6 @@ const Check = () => {
               ))
             )}
           </ul>
-          {orderPlaced && (
-            <p className="text-success">Order placed successfully!</p>
-          )}
           <h4>Total: {cart.reduce((acc, item) => acc + item.price, 0).toFixed(1)} Rs</h4>
           <Button className='btn btn-info' onClick={clearCart}>Clear Cart</Button>
         </Modal.Body>
@@ -100,6 +95,7 @@ const Check = () => {
           </form>
         </Modal.Footer>
       </Modal>
+      <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} closeOnClick />
     </div>
   );
 };

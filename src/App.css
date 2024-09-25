@@ -1,0 +1,377 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* src/TodoList.css */
+.todo-list {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 8px;
+  border: none;
+  border-radius: 6px;
+  background-color: #163e69;
+  color: white;
+  cursor: pointer;
+}
+
+ 
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: 1px solid #ddd; */
+}
+.px-4 {
+  text-decoration: none;
+  
+  font-size: larger;
+}
+li:last-child {
+  border-bottom: none;
+}
+.caption{
+  background-color:blueviolet;
+  font-size:20px;
+  
+}
+.caption:hover{
+ background-color: aquamarine;
+
+}
+ 
+ 
+  
+ 
+
+img:hover {
+  opacity: 0.5;
+}
+ /* nav.css */
+.App {
+  text-align: center;
+}
+h2{
+  text-align: center;
+  font-family: "Pacifico", cursive;
+}
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1em;
+  /* background: #f9f9f9; */
+  border-radius: 5px;
+}
+
+ 
+
+label {
+  margin-bottom: .5em;
+  color: #333333;
+  display: block;
+}
+
+input {
+  border: 1px solid #CCCCCC;
+  padding: .5em;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0.7em;
+  color: #fff;
+  background: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+.img-start{
+  width: 20px;
+}
+.footer{
+  background-color: antiquewhite;
+}
+
+.uppercase{
+ color: #163e69;
+ font-size: smaller;
+ font-weight: bolder;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.des{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(182, 149, 109);
+}
+.p{
+  color:rgb(77, 121, 122);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.c{
+  color: rgb(230, 197, 155);
+  cursor: pointer;
+}
+.c:hover{
+  color: #333333;
+}
+/* ------------------ */
+.star {
+  font-size: 24px;
+  cursor: pointer;
+  color: #ddd; /* Gray for empty stars */
+}
+
+.star.filled {
+  color: #f5c518; /* Gold for filled stars */
+}
+/* -------------- */
+.menu{
+  color: rgb(7, 110, 110);
+  font-size: 20px;
+}
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-size: 20px;
+  color: gold; /* Gold color for stars */
+}
+/* ------------------ */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+  max-width: 100px;
+}
+
+.navlink {
+  color: burlywood;
+  font-family: "Matemasie", sans-serif;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+/* recipedetails */
+.recname {
+ font-family: 'Times New Roman', Times, serif;
+}
+.recstep{
+   font-size: larger;
+  font-family: 'Times New Roman', Times, serif;
+}
+.recimg{
+  border-radius: 100px;
+}
+/* ----------------------- */
+ 
+ 
+.span{
+  font-size: "2vw";
+  display: "inline";
+  text-align: 'center';
+   margin: "0";
+}
+/* ------------------------------- */
+ .recip{
+  text-align: center;
+   font-size: x-large;
+  background-color: burlywood;
+  color: #fff;
+  box-sizing: content-box;
+  padding: 110px;
+  
+ }
+  .form{
+    position: relative;
+    
+  }
+
+
+  /* -- */
+  .carouselcontainer img {
+   width: 100%;  
+    margin: auto; 
+    max-height:500px;  
+    object-fit: cover; 
+    height: auto;   
+  }
+  
+  .carousel-item img {
+    width: 100%;  
+  
+  }
+  
+  h1{
+    font-family: "Pacifico", cursive;
+    font-size: 32px;
+  }
+  .input-wrapper{
+    background-color: white;
+    width: 100%;
+    border-radius: 15px;
+    height: 2.5rem;
+    padding: 0 15px;
+    box-shadow: 0px 0px 8px #ddd;
+    display: flex;
+    align-items: center;
+  }
+   .input-place{
+    border: none;
+    height: 100%;
+    font-size: 1.25rem;
+    width: 100%;
+    
+   }
+   #search-icon{
+    color: #282c34;
+   }
+   .input-place:focus{
+    outline: none;
+   }
+   /* ------------ */
+   .form-container {
+    width: 30%;
+    padding: 0 15px;
+   }
+   @media screen and (max-width: 1000px) {
+    .form-container {
+      width: 45%;
+     }
+   }
+   @media screen and (max-width: 1000px) {
+    .form-container {
+      width: 65%;
+     }
+   }
+   /* /////////// */
+   
+   .basket-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .basket-btn .badge {
+    position: absolute;
+    
+    top: -10px;
+    right: -10px;
+  }
+  
+  .modal-body ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .modal-body .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+  }
+  
+  .modal-body .btn-danger {
+    font-size: 1.25rem;
+  }
+  
+  .form-control {
+    margin-bottom: 1rem;
+  }
+  /* -------- */
+  /* App.css */
+.footer {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.footer a {
+  color: #f8f9fa;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #adb5bd;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #f8f9fa;
+}
+
+.social-icons a:hover {
+  color: #adb5bd;
+}

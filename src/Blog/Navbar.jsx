@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+ import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import SignupModal from './Sign-up';  
 import LoginModal from './logiin';  
@@ -29,7 +29,7 @@ const NavbarComponent = () => {
           <Nav className="ms-auto px-4">
             <Nav.Link href="/" className='px-4 text-light'>See Here</Nav.Link>
             <Nav.Link href="/about" className='px-4 text-light'>About</Nav.Link>
-            <Nav.Link href="recipe" className='px-4 text-light'>Taste Here</Nav.Link>
+            <Nav.Link href="/recipe" className='px-4 text-light'>Taste Here</Nav.Link>
             <Nav.Link onClick={handleShowSignup} className='px-4 text-light'>Sign-Up</Nav.Link>
             <Nav.Link onClick={handleShowLogin} className='px-4 text-light'>Login</Nav.Link>
             <Nav.Link href="/menu" className='px-4 text-light'>Menu</Nav.Link>
